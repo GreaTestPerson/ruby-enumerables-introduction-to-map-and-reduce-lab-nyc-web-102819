@@ -44,22 +44,14 @@ end
 
 
 def reduce_to_total(source_array, starting_point=0)
-  total = 0
+  index = 0 
+  output = starting_point
   
-  if starting_point > 0
-    count = starting_point
-    while count < source_array.count do
-      total += source_array[count]
-      count += 1
-      return total
-    end
-  else
-    while starting_point < source_array.count do
-      total += source_array[starting_point]
-      starting_point += 1
-      return total
-    end
-
+  while index < source_array.length do
+      output += source_array[index]
+      index += 1
+end
+output
 end
 
 
