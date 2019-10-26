@@ -31,15 +31,14 @@ def map_to_double(source_array)
 end
 
 def map_to_square(source_array)
-  count = 0
-  square = []
-  
-  while count < source_array.count do
-    square << source_array[count] ** (2)
-    count += 1
-  end
-  
-  return square
+count = 0
+square = 2
+  while count < source_array.length do
+  source_array[count] = source_array[count]**square
+  source_array[count]
+  count += 1
+end 
+source_array
 end 
 
 
