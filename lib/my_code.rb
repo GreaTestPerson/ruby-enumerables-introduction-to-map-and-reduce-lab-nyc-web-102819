@@ -21,12 +21,14 @@ end
 
 
 def map_to_double(source_array)
-  count = 0
-  double = []
-  
-  while count < source_array.count do
-    double << source_array[count] * (2)
-    count += 1
+count = 0
+double = 2
+while count < source_array.length do
+source_array[count] = source_array[count] * double
+source_array[count]
+count += 1
+end
+source_array
 
 end
 
