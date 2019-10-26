@@ -1,15 +1,14 @@
 # My Code here....
 
-def map_to_negativize
-  count = 0
-  negativize = []
-  
-  while count < source_array.count do
-    negativize << source_array[count] * (-1)
-    count += 1
-  end
-  
-  return negativize
+def map_to_negativize(source_array)
+count = 0
+negative = -1
+while count < source_array.length do
+source_array[count] = source_array[count] * negative
+source_array[count]
+count += 1
+end
+source_array
 end 
 
 
